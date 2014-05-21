@@ -1,0 +1,48 @@
+<html>
+<head>
+<title> Moon animation </title>
+<style>
+#moon {
+	position:absolute;
+	top:100px;
+	left:100px;
+	height:500px;
+	width:820px;
+}
+#rover {
+	position:absolute;
+}
+</style>
+
+</head>
+<img src="moon.png" id="moon">
+<img src="rover0.png" id="rover">
+<input type="button" id="button" style="position:absolute;top:600px;left:400px" onclick="animation()" value="Start"> 
+<script>
+var time=0;
+b=document.getElementById("moon");
+function animation() {
+	document.getElementById("button").value="Faster";
+	setInterval(animate,100);
+}
+function animate(){
+if(time>6.28)
+	time=0;
+	a=document.getElementById("rover");
+	a.style.top=(325+(Math.sin(time)*10))+"px";
+	a.style.left=485+(Math.cos(time)*200)+"px";
+	time+=0.1;
+	console.log(time);
+if(time>0.2 && time<3) {
+	a.style.zIndex=2;
+	b.style.zIndex=3;
+}
+
+else {
+	a.style.zIndex=3;
+	b.style.zIndex=2;
+}
+
+}
+</script>
+</html>
