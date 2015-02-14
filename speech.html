@@ -1,0 +1,58 @@
+<html>
+<style>
+#p1 {
+font-family:"Verdana", Geneva, sans-serif;
+size:10px;
+color:yellow;
+}
+#p2 {
+font-family:"Verdana", Geneva, sans-serif;
+size:10px;
+color:yellow;
+}
+#p3 {
+font-family:"Verdana", Geneva, sans-serif;
+size:10px;
+color:yellow;
+}
+#heading {
+font-family:"Georgia",serif;
+color:white;
+}
+</style>
+<h1 id="heading" align="center"><u>Albert Einstein</u></h1>
+<div align="left" id="p1" onclick="change(this)">
+In 1895, at the age of sixteen, Einstein sat the entrance examinations for the Swiss Federal Polytechnic in Zürich (later the Eidgenössische Technische 
+Hochschule ETH). He failed to reach the required standard in the general part of the examination, but obtained exceptional grades in physics and mathematics.
+ On the advice of the Principal of the Polytechnic, he attended the Argovian cantonal school (gymnasium) in Aarau, Switzerland, in 1895–96 to complete his 
+secondary schooling. While lodging with the family of Professor Jost Winteler, he fell in love with Winteler's daughter, Marie. (Albert's sister Maja later 
+married Wintelers' son Paul.) In January 1896, with his father's approval, he renounced his citizenship in the German Kingdom of Württemberg to avoid military
+ service. In September 1896, he passed the Swiss Matura with mostly good grades, including a top grade of 6 in physics and mathematical subjects, on a scale 
+1-6, and, though only seventeen, enrolled in the four-year mathematics and physics teaching diploma program at the Zürich Polytechnic. Marie Winteler moved 
+to Olsberg, Switzerland for a teaching post.
+</div><br>
+<div align="left" id="p2" onclick="change(this)" >
+He was visiting the United States when Adolf Hitler came to power in 1933 and, being Jewish, did not go back to Germany, where he had been a professor at the 
+Berlin Academy of Sciences. He settled in the U.S., becoming an American citizen in 1940. On the eve of World War II, he endorsed a letter to President
+ Franklin D. Roosevelt alerting him to the potential development of "extremely powerful bombs of a new type" and recommending that the U.S. begin similar 
+research. This eventually led to what would become the Manhattan Project. Einstein supported defending the Allied forces, but largely denounced the idea of
+ using the newly discovered nuclear fission as a weapon. Later, with the British philosopher Bertrand Russell, Einstein signed the Russell–Einstein Manifesto,
+ which highlighted the danger of nuclear weapons. Einstein was affiliated with the Institute for Advanced Study in Princeton, New Jersey, until his death in 1955.
+</div><br>
+<div align="left" id="p3" onclick="change(this)">
+Near the beginning of his career, Einstein thought that Newtonian mechanics was no longer enough to reconcile the laws of classical mechanics with the laws 
+of the electromagnetic field. This led to the development of his special theory of relativity. He realized, however, that the principle of relativity could 
+also be extended to gravitational fields, and with his subsequent theory of gravitation in 1916, he published a paper on the general theory of relativity.
+ He continued to deal with problems of statistical mechanics and quantum theory, which led to his explanations of particle theory and the motion of molecules. 
+He also investigated the thermal properties of light which laid the foundation of the photon theory of light. In 1917, Einstein applied the general theory of 
+relativity to model the large-scale structure of the universe.
+</div><br>
+<script>
+function change(a) {
+var msg=new SpeechSynthesisUtterance(a.innerHTML);
+window.speechSynthesis.speak(msg);
+}
+</script>
+<body background="images.JPG">
+</body>
+</html>
